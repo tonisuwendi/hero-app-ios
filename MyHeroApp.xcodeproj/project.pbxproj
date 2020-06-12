@@ -13,6 +13,12 @@
 		0436B01F2492FD1F005BA941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0436B01D2492FD1F005BA941 /* Main.storyboard */; };
 		0436B0212492FD1F005BA941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0436B0202492FD1F005BA941 /* Assets.xcassets */; };
 		0436B0242492FD1F005BA941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0436B0222492FD1F005BA941 /* LaunchScreen.storyboard */; };
+		0436B0312492FF62005BA941 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B02F2492FF62005BA941 /* HeroTableViewCell.swift */; };
+		0436B0322492FF62005BA941 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B0302492FF62005BA941 /* HeroTableViewCell.xib */; };
+		0436B038249301E8005BA941 /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B037249301E8005BA941 /* DummyHeroes.swift */; };
+		0436B03A249301F5005BA941 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B039249301F5005BA941 /* Hero.swift */; };
+		04DB3D69249327C900C35CBB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB3D67249327C900C35CBB /* DetailViewController.swift */; };
+		04DB3D6A249327C900C35CBB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DB3D68249327C900C35CBB /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		0436B0202492FD1F005BA941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0436B0232492FD1F005BA941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0436B0252492FD1F005BA941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0436B02F2492FF62005BA941 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		0436B0302492FF62005BA941 /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		0436B037249301E8005BA941 /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		0436B039249301F5005BA941 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		04DB3D67249327C900C35CBB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04DB3D68249327C900C35CBB /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		0436B0162492FD1E005BA941 /* MyHeroApp */ = {
 			isa = PBXGroup;
 			children = (
-				0436B0172492FD1F005BA941 /* AppDelegate.swift */,
-				0436B0192492FD1F005BA941 /* SceneDelegate.swift */,
-				0436B01B2492FD1F005BA941 /* ViewController.swift */,
-				0436B01D2492FD1F005BA941 /* Main.storyboard */,
+				0436B0342493012E005BA941 /* Model */,
+				0436B03624930167005BA941 /* View */,
+				0436B03524930134005BA941 /* Controller */,
+				0436B03324930118005BA941 /* Base */,
 				0436B0202492FD1F005BA941 /* Assets.xcassets */,
-				0436B0222492FD1F005BA941 /* LaunchScreen.storyboard */,
 				0436B0252492FD1F005BA941 /* Info.plist */,
 			);
 			path = MyHeroApp;
+			sourceTree = "<group>";
+		};
+		0436B03324930118005BA941 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0436B0172492FD1F005BA941 /* AppDelegate.swift */,
+				0436B0192492FD1F005BA941 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0436B0342493012E005BA941 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0436B037249301E8005BA941 /* DummyHeroes.swift */,
+				0436B039249301F5005BA941 /* Hero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0436B03524930134005BA941 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0436B02F2492FF62005BA941 /* HeroTableViewCell.swift */,
+				0436B01B2492FD1F005BA941 /* ViewController.swift */,
+				04DB3D67249327C900C35CBB /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0436B03624930167005BA941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0436B0302492FF62005BA941 /* HeroTableViewCell.xib */,
+				04DB3D68249327C900C35CBB /* DetailViewController.xib */,
+				0436B01D2492FD1F005BA941 /* Main.storyboard */,
+				0436B0222492FD1F005BA941 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,9 @@
 			files = (
 				0436B0242492FD1F005BA941 /* LaunchScreen.storyboard in Resources */,
 				0436B0212492FD1F005BA941 /* Assets.xcassets in Resources */,
+				04DB3D6A249327C900C35CBB /* DetailViewController.xib in Resources */,
 				0436B01F2492FD1F005BA941 /* Main.storyboard in Resources */,
+				0436B0322492FF62005BA941 /* HeroTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +192,11 @@
 			files = (
 				0436B01C2492FD1F005BA941 /* ViewController.swift in Sources */,
 				0436B0182492FD1F005BA941 /* AppDelegate.swift in Sources */,
+				0436B038249301E8005BA941 /* DummyHeroes.swift in Sources */,
 				0436B01A2492FD1F005BA941 /* SceneDelegate.swift in Sources */,
+				0436B0312492FF62005BA941 /* HeroTableViewCell.swift in Sources */,
+				0436B03A249301F5005BA941 /* Hero.swift in Sources */,
+				04DB3D69249327C900C35CBB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
